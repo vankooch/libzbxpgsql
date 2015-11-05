@@ -22,9 +22,8 @@
 
 #include <ctype.h>
 #include <stdarg.h>
-#if HAVE_NETINET_IN_H
-# include <netinet/in.h>
-#endif
+#include <netinet/in.h>
+#include <sys/socket.h>
 #include <arpa/inet.h>
 
 #include "include/sysinc.h"
