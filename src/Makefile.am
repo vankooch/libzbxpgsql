@@ -1,8 +1,11 @@
 GIT_VERSION = $(shell git describe --abbrev=8 --dirty --always --tags)
 
 # TODO: Move pg_config call from Makefile into configure script
-PSQL_INCLUDE = $(shell pg_config --includedir)
-PSQL_LIB = $(shell pg_config --libdir)
+# PSQL_INCLUDE = $(shell pg_config --includedir)
+# PSQL_LIB = $(shell pg_config --libdir)
+
+PSQL_INCLUDE = /usr/local/include
+PSQL_LIB = /usr/local/lib
 
 lib_LTLIBRARIES = libzbxpgsql.la
 
